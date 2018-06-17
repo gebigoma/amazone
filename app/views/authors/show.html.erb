@@ -2,9 +2,7 @@
 <hr>
 <h3><%= @author.bio %></h3>
 <hr>
+
+<%= link_to "Delete Author", new_author_path %>
+
 <h3>List of books:</h3>
-<ul>
-<% @arthur.books.each do |b| %>
-  <li><%= link_to 'b.title', "/books/#{b.id}" %> </li>
-  <% end %>
-</ul>
